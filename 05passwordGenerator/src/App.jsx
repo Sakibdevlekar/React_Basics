@@ -21,6 +21,7 @@ function App() {
   }, [length, numberAllowed, charAllowed]);
   useEffect(() => {
     generatorPassword()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [length, numberAllowed, charAllowed]);
 
   const copyPasswordToClipboard = () =>{

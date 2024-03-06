@@ -40,11 +40,11 @@ const dotsContainerStyles = {
   justifyContent: "center",
 };
 
-const dotStyle = {
-  margin: "0 3px",
-  cursor: "pointer",
-  fontSize: "20px"
-};
+// const dotStyle = {
+//   margin: "0 3px",
+//   cursor: "pointer",
+//   fontSize: "20px"
+// };
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,7 +63,7 @@ const ImageSlider = ({ slides }) => {
   };
   const slideStylesWidthBackground = {
     ...slideStyles,
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundImage: `url(${slides[currentIndex]})`,
   };
 
   return (
@@ -77,7 +77,7 @@ const ImageSlider = ({ slides }) => {
         </div>
       </div>
       <div style={slideStylesWidthBackground}></div>
-      <div style={dotsContainerStyles}>
+      {/* <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <div
             style={dotStyle}
@@ -87,7 +87,7 @@ const ImageSlider = ({ slides }) => {
             ●
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

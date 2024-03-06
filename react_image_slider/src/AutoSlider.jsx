@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import  { useState, useEffect } from 'react';
 const slideStyles = {
     width: "100%",
@@ -25,10 +26,7 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div>
-      <img src={slides[currentSlide].url} alt={slides[currentSlide].title} style={ slideStyles } />
-      {
-      /* Optionally display slide title or other content */}
-      <p>{slides[currentSlide].title}</p>
+      <img src={slides[currentSlide]} alt={slides[currentSlide]} style={ slideStyles } />
     </div>
   );
 };

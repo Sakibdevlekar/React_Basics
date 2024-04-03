@@ -1,0 +1,74 @@
+body{
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans",Arial, Helvetica, sans-serif;
+  background-color: aquamarine;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1{
+  text-align:"center";
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-container input{
+  height: 40px;
+  width: 500px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border: none;
+
+}
+
+.input-container button{
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: royalblue;
+  border: none;
+  font-size:1.5rem
+}
+
+.task-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo{
+  width: 500px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: aliceblue;
+  padding: 0px 8px;
+  margin-top: 15px;
+}
+
+.todo p{
+/* display: flex; */
+width: 50px;
+}
+
+.action-btn button{
+  background-color: red;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
